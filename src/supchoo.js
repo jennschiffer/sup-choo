@@ -27,14 +27,14 @@ const aboutView = (params, state, send) => choo.view`
   <main>
     jenn made this to try out <a href="https://github.com/yoshuawuyts/choo">choo</a>. sorry not sorry for the semi-colons, yosh 😘
 
-    <p><a href="/">go back home</a> and/or <a href="">fork this on "github"</a></p>
+    <p><a href="/">go back home</a> and/or <a href="https://github.com/jennschiffer/sup-choo/">fork this on "github"</a></p>
   </main>
 `;
 
 app.router((route) => [
   route('/', mainView),
   route('/about', aboutView)
-])
+]);
 
-const tree = app.start()
-document.body.appendChild(tree)
+const tree = app.start();
+document.body.appendChild(tree);
